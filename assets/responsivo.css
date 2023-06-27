@@ -1,0 +1,25 @@
+@media(max-width:900px){
+    #inicio .divImg{
+        max-width: 380px;
+        justify-self: center;
+    }
+
+    .qualifi-conteudo{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 80px;
+        
+    } 
+
+    .qualifi-conteudo-cursos, .qualifi-conteudo-proje{
+        justify-self: center
+    }
+    
+    .qualifi-conteudo-cursos{
+        height:200px
+    }
+    
+    #sobre .sobre-conteudo .sobre-img{
+      padding-right: 20px;
+    }
+    
+}
