@@ -25,6 +25,7 @@ a{
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 section,main{
@@ -32,7 +33,6 @@ section,main{
     max-width:100%;
     padding: 50px 10px;
 }
-
 
 body{
     max-width: 100%;
@@ -46,7 +46,6 @@ body{
 .container-conteudo{
     width: 100%;
     max-width: 100%;
-    
 }
 
 /*HEADER E SUA NAVEGAÇÃO*/
@@ -67,6 +66,8 @@ header{
 
 nav ul{
     display: flex;
+    background-color: #121d1d;
+    border-radius: 8px;
 }
 
 nav ul li + li{
@@ -79,6 +80,22 @@ nav ul li a{
   height: 22px;
   text-align: center;
 }
+
+nav button{
+  width: 45px;
+  height: 40px;
+  background-color: #121d1d;
+  display: none;
+  border:none
+}
+
+nav button div{
+    height: 4px;
+    width: 30px;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+}
+
 
 /*INICIO */
 #inicio{
@@ -142,7 +159,7 @@ nav ul li a{
 
 .servicos-lista{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 40px;
@@ -151,6 +168,7 @@ nav ul li a{
 .servicos-lista li{
  width: 250px;
  position: relative;
+ padding: 12px;
 }
 
 .servicos-lista li h3, #servicos h2{
@@ -167,8 +185,8 @@ nav ul li a{
     width: 15px;
     height: 8px;
     position: absolute;
-    top:10px;
-    left:-18px;
+    top:20px;
+    left:-8px;
     background-image:linear-gradient(to bottom, #07975b,#14ee93); 
 }
 
@@ -238,7 +256,9 @@ nav ul li a{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 80px;
     padding-top: 40px;
-    gap:10px
+    gap:10px;
+    max-width: 100%;
+    
 }
 
 .qualifi-conteudo .link-orcamento{
@@ -253,7 +273,6 @@ nav ul li a{
     color:#121d1d;
     grid-column: 1/-1;
     justify-self: center;
-
 }
 
 .qualifi-conteudo .link-orcamento:hover{
@@ -266,7 +285,6 @@ nav ul li a{
 .qualifi-conteudo-cursos, .qualifi-conteudo-proje{
     width: 400px;
     border-radius: 8px;
-    max-width: 90%;
     padding: 10px;
 }
 

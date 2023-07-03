@@ -1,4 +1,26 @@
+.mostrar{
+    display:flex
+}
+
+.esconde-divCentral-botao{
+    display: none;
+}
+
+.inclina-primeiraDiv-botao{
+    transform: rotate(48deg)translate(3px, 5px);
+    transform-origin: center;
+}
+
+.inclina-terceiraDiv-botao{
+    transform: rotate(-47deg)translate(0px, -4px);
+    transform-origin: center;
+}
+
 @media(max-width:900px){
+    #inicio{
+        padding: 90px 16px ;
+    }
+    
     #inicio .divImg{
         max-width: 380px;
         justify-self: center;
@@ -11,7 +33,7 @@
     } 
 
     .qualifi-conteudo-cursos, .qualifi-conteudo-proje{
-        justify-self: center
+        justify-self: center;
     }
     
     .qualifi-conteudo-cursos{
@@ -22,4 +44,102 @@
       padding-right: 20px;
     }
     
+}
+
+@media(max-width:760px){
+    header h1{
+        font-size: 1.7rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    header nav{
+        position: relative;
+    }
+
+    header nav ul{
+        display: none;
+        flex-direction: column;
+        align-items:flex-end;
+        position: absolute;
+        right:0px;
+        top: 40px;
+        z-index: 3;
+        width: 100px;
+    }
+
+    nav button{
+       display: block;
+    }
+
+    header nav ul li{
+        margin-right: none;
+        align-self: flex-start;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    header nav ul li a{
+        display: inline-block;
+        width: 100%;
+    }
+
+    #inicio{
+        grid-template-columns: 1fr;
+        padding-bottom: 20px
+    }
+    
+    #inicio .divImg{
+        display: none;
+    }
+    
+    #inicio a{
+        height: 40px;
+        width:125px;
+       
+        font-size: .9rem;
+    }
+
+    
+    #sobre .sobre-conteudo{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #sobre .sobre-img{
+        justify-self: center;
+        padding-right: 0;
+    }
+
+    .qualifi-conteudo .link-orcamento{
+        
+        width: 175px;
+        height: 40px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+}
+
+@media(max-width:450px){
+    #sobre .sobre-img{
+        max-width: 290px
+    }
+
+    #sobre .qualifi-conteudo-cursos, .qualifi-conteudo-proje{
+        max-width: 270px;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    #contato{
+     padding-top: 30px;   
+    }
 }
