@@ -123,6 +123,10 @@
 }
 
 @media(max-width:450px){
+    #inicio{
+        padding-bottom: 40px ;
+    }
+
     #sobre .sobre-img{
         max-width: 290px
     }
