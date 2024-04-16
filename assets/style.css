@@ -241,11 +241,33 @@ nav button div{
   color:#121d1d
 }
 
+/*estilo padrão da sessão sobre*/
 #sobre .sobre-conteudo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     padding-bottom: 30px;
+    opacity: 1;
+}
+
+/*estilo de opacidade se js ativado, sessão sobre*/
+.jsAtivo #sobre .sobre-conteudo {
+    opacity: 0;
+}
+
+/*animação para trazer opacidade de volta ao scroll, via js*/
+.anima-opacidade{
+    animation: opacidade;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacidade{
+   to{
+    opacity: 1;
+   }
 }
 
 #sobre .sobre-img{
